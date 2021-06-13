@@ -5,10 +5,25 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      animation: {
-        fadeIn: "fadeIn 1s ease-in forwards",
-        wiggle: 'wiggle 1s ease-in-out forwards',
+      keyframes: {
+        'fade-in-up': {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        'wiggle': {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(9deg)' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+      },
+      animation: {
+        'fade-in-up': 'fade-in-up 0.5s ease-out',
+        'wiggle': 'wiggle 0.5s ease-in-out',
+        'fade-in': 'fade-in 0.5s ease-in',
+      },
       colors: {
         brand: {
           '50': '#ECFDF5',
@@ -24,16 +39,6 @@ module.exports = {
         },
       },
     },
-    keyframes: {
-      fadeIn: {
-        "0%": { opacity: 0 },
-        "100%": { opacity: 1 }
-      },
-      wiggle: {
-        '0%, 100%': { transform: 'rotate(-3deg)' },
-        '50%': { transform: 'rotate(3deg)' },
-      }
-    }
   },
   variants: {
     extend: {
