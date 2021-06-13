@@ -5,6 +5,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      animation: {
+        fadeIn: "fadeIn 1s ease-in forwards",
+        wiggle: 'wiggle 1s ease-in-out forwards',
+        },
       colors: {
         brand: {
           '50': '#ECFDF5',
@@ -20,19 +24,20 @@ module.exports = {
         },
       },
     },
-    animation: {
-      fadeIn: "fadeIn 1s ease-in forwards"
-    },
     keyframes: {
       fadeIn: {
         "0%": { opacity: 0 },
         "100%": { opacity: 1 }
+      },
+      wiggle: {
+        '0%, 100%': { transform: 'rotate(-3deg)' },
+        '50%': { transform: 'rotate(3deg)' },
       }
     }
   },
   variants: {
-    extend: {},
-    animation: ["motion-safe"],
+    extend: {
+    },
   },
   plugins: [],
 }
