@@ -1,6 +1,6 @@
-# selvvirk--website
+# borealis--website
 
-This is the repository for the Opticaal Website.
+This is the repository for the Borealis Website.
 
 
 ## Installation
