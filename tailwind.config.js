@@ -5,9 +5,6 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      fontFamily: {
-        'special-elite': ['special elite', 'cursive'],
-      },
       colors: {
         brand: {
           '50': '#ECFDF5',
@@ -23,9 +20,20 @@ module.exports = {
         },
       },
     },
+    animation: {
+      fadeIn: "fadeIn 1s ease-in forwards"
+    },
+    keyframes: {
+      fadeIn: {
+        "0%": { opacity: 0 },
+        "100%": { opacity: 1 }
+      }
+    }
   },
   variants: {
     extend: {},
+    animation: ["motion-safe"],
   },
   plugins: [],
 }
+
