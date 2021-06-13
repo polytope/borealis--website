@@ -54,3 +54,27 @@ window.onload = function() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #CCC }";
     document.body.appendChild(css);
 };
+
+function mortenHover(x) {
+    x.src = "../assets/mortenHover.jpg";
+}
+
+function mortenNorm(x) {
+    x.src = "../assets/morten.jpg";
+}
+
+function bogiHover(x) {
+    x.src = "../assets/bogiHover.jpg";
+}
+
+function bogiNorm(x) {
+    x.src = "../assets/bogi.jpg";
+}
+
+function tummasHover(x) {
+    x.src = "../assets/tummasHover.jpg";
+}
+
+function tummasNorm(x) {
+    x.src = "../assets/tummas.jpg";
+}
