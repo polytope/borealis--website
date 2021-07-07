@@ -56,7 +56,7 @@ window.onload = function() {
 };
 
 function mortenHover(x) {
-    x.src = "../assets/mortenHover.jpg";
+    x.src = "../assets/morten.jpg";
 }
 
 function mortenNorm(x) {
@@ -64,7 +64,7 @@ function mortenNorm(x) {
 }
 
 function bogiHover(x) {
-    x.src = "../assets/bogiHover.jpg";
+    x.src = "../assets/bogi.jpg";
 }
 
 function bogiNorm(x) {
@@ -72,7 +72,7 @@ function bogiNorm(x) {
 }
 
 function tummasHover(x) {
-    x.src = "../assets/tummasHover.jpg";
+    x.src = "../assets/tummas.jpg";
 }
 
 function tummasNorm(x) {
