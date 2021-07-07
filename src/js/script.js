@@ -78,3 +78,7 @@ function tummasHover(x) {
 function tummasNorm(x) {
     x.src = "../assets/tummas.jpg";
 }
+
+function toggleMobileMenu() {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+}
