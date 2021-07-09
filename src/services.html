@@ -10,9 +10,9 @@
 </head>
 <body>
 <div class="bg-gray-50">
-    <div class="relative overflow-hidden">
-        <div class="w-full pt-6 pb-11 cover">
-            <div class="relative pt-6 pb-16 sm:pb-2">
+    <div class="relative">
+        <div class="w-full pt-6 pb-0 md:pb-11 cover">
+            <div class="relative pt-6 pb-16 md:pb-16 md:pt-6">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6">
                     <nav aria-label="Global"
                          class="relative flex items-center justify-between sm:h-10 md:justify-end">
@@ -46,28 +46,17 @@
 
                             <a class="font-medium text-brand-400 hover:text-brand-600" href="aboutus.html">Um okkum</a>
 
-                            <a href="mailto:borealis@borealis.fo" class="animate-wiggle">
-                                <button type="button" href="mailto:borealis@borealis.fo" class="align-middle text-brand-400 hover:text-white inline-flex items-center px-3 py-2 border border-brand-300 hover:border-brand-400 hover:bg-brand-500 text-sm leading-4 font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
+                            <a href="mailto:samband@borealis.fo" class="animate-wiggle">
+                                <button type="button" href="mailto:samband@borealis.fo" class="align-middle text-brand-400 hover:text-white inline-flex items-center px-3 py-2 border border-brand-300 hover:border-brand-400 hover:bg-brand-500 text-sm leading-4 font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
                                     <i class="animate-fade-in fad fa-envelope mr-2 mt-1"></i>Samband
                                 </button>
                             </a>
                         </div>
                     </nav>
                 </div>
-
-                <!--
-                  Mobile menu, show/hide based on menu open state.
-
-                  Entering: "duration-150 ease-out"
-                    From: "opacity-0 scale-95"
-                    To: "opacity-100 scale-100"
-                  Leaving: "duration-100 ease-in"
-                    From: "opacity-100 scale-100"
-                    To: "opacity-0 scale-95"
-                -->
                 <div  id="mobileMenu" class="absolute hidden top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                     <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                        <div class="px-5 pt-4 flex items-center justify-between">
+                        <div class="pr-5 pl-2 pt-4 flex items-center justify-between">
                             <div>
                                 <img alt="Logo" class="h-8 w-auto" src="assets/logo_bg.png">
                             </div>
@@ -85,14 +74,14 @@
                             </div>
                         </div>
                         <div class="px-2 pt-2 pb-3 space-y-1">
-                            <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 bg-gray-50"
-                               href="/">Forsíða</a>
                             <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                               href="/">Forsíða</a>
+                            <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 bg-gray-50"
                                href="services.html">Tænastur</a>
                             <a class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
                                href="aboutus.html">Um okkum</a>
-                            <a class="block px-3 py-2 rounded-md text-base font-medium text-red-800 hover:text-red-900 hover:bg-red-50"
-                               href="mailto:borealis@borealis.fo"><i class="far fa-envelope mr-2"></i>Samband</a>
+                            <a class="block px-3 py-2 rounded-md text-base font-medium text-brand-800 hover:text-brand-900 hover:bg-brand-50"
+                               href="mailto:samband@borealis.fo"><i class="far fa-envelope mr-2"></i>Samband</a>
                         </div>
                     </div>
                 </div>
@@ -101,15 +90,15 @@
     </div>
 </div>
 
-<div class="bg-gray-50 pt-16">
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 pt-10">
+<div class="bg-gray-50 pt-0 lg:pt-16">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 pt-0 lg:pt-10 animate-fade-in-up">
         <div class="text-center">
             <h2 class="text-base font-semibold text-brand-600 tracking-wide uppercase">Tænastur</h2>
             <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Hvat kunnu
                 tit bjóða?</p>
         </div>
     </div>
-    <div class="container mx-auto mt-0 md:mt-10">
+    <div class="container mx-auto mt-0 md:mt-10 animate-fade-in-up">
         <ul class="pb-32 grid grid-cols-1 gap-6 md:gap-10 lg:gap-6 md:grid-cols-2 lg:grid-cols-4">
             <li class="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200 pb-10 mt-10 md:mt-0">
                 <div class="flex-1 flex flex-col">
@@ -125,7 +114,7 @@
                     <h3 class="mt-6 text-gray-900 text-sm font-medium uppercase">Hálva loysn</h3>
                     <dl class="mt-1 flex-grow flex flex-col justify-between">
                         <dd class="text-gray-500 text-sm pl-10 pr-10 mx-auto">
-                            Vit uppseta eina skapilón av tykkara blaði, soleiðis at sniðgevin enn hevur fulla ábyrgd av sniðinum, men skal ikki hugsa um, hvussu dátaði sær út. <br><br><a href="mailto:borealis@borealis.fo" class="text-brand-800">Set teg í Samband við okkum, um tú vilt vita meira</a>.
+                            Vit uppseta eina skapilón av tykkara blaði, soleiðis at sniðgevin enn hevur fulla ábyrgd av sniðinum, men skal ikki hugsa um, hvussu dátaði sær út. <br><br><a href="mailto:samband@borealis.fo" class="text-brand-800">Set teg í Samband við okkum, um tú vilt vita meira</a>.
                         </dd>
                     </dl>
                 </div>
@@ -144,7 +133,7 @@
                     <h3 class="mt-6 text-gray-900 text-sm font-medium uppercase">Fulla loysn</h3>
                     <dl class="mt-1 flex-grow flex flex-col justify-between">
                         <dd class="text-gray-500 text-sm pl-10 pr-10 mx-auto">
-                            Hevur tú ongan sniðgeva? Við okkara fullu loysn, er tað ongin trupulleiki. Tú skalt einans senda okkum ein fíl við dáta, tá tú hevur brúk fyri einum prentluti, og vit senda tær eina lidna versión nakrar dagar seinni. <br><br><a href="mailto:borealis@borealis.fo" class="text-brand-800">Set teg í Samband við okkum, um tú vilt vita meira</a>.
+                            Hevur tú ongan sniðgeva? Við okkara fullu loysn, er tað ongin trupulleiki. Tú skalt einans senda okkum ein fíl við dáta, tá tú hevur brúk fyri einum prentluti, og vit senda tær eina lidna versión nakrar dagar seinni. <br><br><a href="mailto:samband@borealis.fo" class="text-brand-800">Set teg í Samband við okkum, um tú vilt vita meira</a>.
                         </dd>
                     </dl>
                 </div>
@@ -163,7 +152,7 @@
                     <h3 class="mt-6 text-gray-900 text-sm font-medium uppercase">Skeið</h3>
                     <dl class="mt-1 flex-grow flex flex-col justify-between">
                         <dd class="text-gray-500 text-sm pl-10 pr-10 mx-auto">
-                            Fyri at hjálpa tær og tínum starvsfelagum best í gongd við EasyCatalog, so kunnu vit veita skeiðir eftir tørvið. Vit hava bæði full-skeið, har vit gjøgnumganga EasyCatalog frá A til OY, men kunnu eisini veita modulur, til júst tað, ið tit hava brúk fyri at læra meira um. <br><br><a href="mailto:borealis@borealis.fo" class="text-brand-800">Set teg í Samband við okkum, um tú vilt vita meira</a>.
+                            Fyri at hjálpa tær og tínum starvsfelagum best í gongd við EasyCatalog, so kunnu vit veita skeiðir eftir tørvið. Vit hava bæði full-skeið, har vit gjøgnumganga EasyCatalog frá A til OY, men kunnu eisini veita modulur, til júst tað, ið tit hava brúk fyri at læra meira um. <br><br><a href="mailto:samband@borealis.fo" class="text-brand-800">Set teg í Samband við okkum, um tú vilt vita meira</a>.
                         </dd>
                     </dl>
                 </div>
@@ -182,7 +171,7 @@
                     <h3 class="mt-6 text-gray-900 text-sm font-medium uppercase">Support</h3>
                     <dl class="mt-1 flex-grow flex flex-col justify-between">
                         <dd class="text-gray-500 text-sm pl-10 pr-10 mx-auto">
-                            Vit vita væl, at EasyCatalog kann vera fløkjasligt og vilja tí veita hjálp, tá tú hevur tørv á tí. <br><br><a href="mailto:borealis@borealis.fo" class="text-brand-800">Set teg í Samband við okkum, um tú vilt vita meira um okkara Support-avtalur</a>.
+                            Vit vita væl, at EasyCatalog kann vera fløkjasligt og vilja tí veita hjálp, tá tú hevur tørv á tí. <br><br><a href="mailto:samband@borealis.fo" class="text-brand-800">Set teg í Samband við okkum, um tú vilt vita meira um okkara Support-avtalur</a>.
                         </dd>
                     </dl>
                 </div>
@@ -273,7 +262,7 @@
         </h2>
         <div class="mt-8 flex justify-center">
             <div class="inline-flex rounded-md shadow">
-                <a href="mailto:borealis@borealis.fo"
+                <a href="mailto:samband@borealis.fo"
                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-600 hover:bg-brand-700">
                     Samband
                 </a>
